@@ -1,0 +1,13 @@
+QR Decoder
+Supports QR code versions 1-40 containing numeric, alphanumeric, or 8-bit
+byte data. BCH and Reed-Solomon error correction not implemented.
+
+Note: the image processing is rudimentary. It detects the image origin by
+the first black pixel encountered starting from the top-left corner. It
+detects the bit pixel width by doing a horizontal and vertical scan from the
+origin and finding the smallest run of black pixels. It detects the image
+width by finding the last black pixel on a horizontal scan starting from the
+origin, and the QR size by dividing this width by the bit pixel width.
+This is suitable for online generated pixel perfect QR codes, but may need
+some help (pre-processing) for less perfect images.
+
