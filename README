@@ -11,3 +11,4 @@ origin, and the QR size by dividing this width by the bit pixel width.
 This is suitable for online generated pixel perfect QR codes, but may need
 some help (pre-processing) for less perfect images.
 
+See qrd-test.txt for a sample output.
